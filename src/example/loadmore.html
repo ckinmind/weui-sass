@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Load More</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/widget/weui-loadmore.css">
+    <link rel="stylesheet" href="css/widget/weui-loading.css">
+    <style>
+        body {
+            font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif
+        }
+        .page, body {
+            background-color: #fff;
+        }
+        .page__hd {
+            padding: 40px
+        }
+        .page__title {
+            text-align: left;
+            font-size: 20px;
+            font-weight: 400
+        }
+        .page__desc {
+            margin-top: 5px;
+            color: #888;
+            text-align: left;
+            font-size: 14px
+        }
+        .page__bd_spacing {
+            padding: 0 15px;
+        }
+        .button-sp-area {
+            margin: 0 auto;
+            padding: 15px 0;
+            width: 60%;
+        }
+        .page__ft {
+            padding-top: 40px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .page__ft.j_bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .page__ft img {
+            height: 19px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="page__hd">
+        <h1 class="page__title">Loadmore</h1>
+        <p class="page__desc">加载更多</p>
+    </div>
+    <div class="page__bd">
+        <div class="weui-loadmore">
+            <i class="weui-loading"></i>
+            <span class="weui-loadmore__tips">正在加载</span>
+        </div>
+        <div class="weui-loadmore weui-loadmore_line">
+            <span class="weui-loadmore__tips">暂无数据</span>
+        </div>
+        <div class="weui-loadmore weui-loadmore_line weui-loadmore_dot">
+            <span class="weui-loadmore__tips"></span>
+        </div>
+    </div>
+    <div class="page__ft j_bottom">
+        <a href="javascript:home()"><img src="./images/icon_footer_link.png" /></a>
+    </div>
+</div>
+</body>
+</html>
